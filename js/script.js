@@ -236,3 +236,13 @@ const yeniObyekt = {
 
 const kesisme = Object.assign(Obyekt, yeniObyekt); // объединяет объекты
 console.log(kesisme);
+
+
+
+	// ... ОПЕРАТОР
+
+const masin = ["bmw", "kia", "nissan"],
+	  marka = ["M5", "RIO", "Sunny"],
+	  avtomobil = [...masin, ...marka]; // ... объединяет массивов
+ 
+console.log(avtomobil);
