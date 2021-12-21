@@ -211,6 +211,7 @@ massiv.push(10); // добаляет элемент в конце массива
 console.log(massiv);
 
 
+
     // СФОРМИРОВАНИЕ МАССИВ НА ОСНОВЕ СТРОК
 
 const str = prompt(",");
@@ -219,8 +220,8 @@ console.log(products);
 
 
 
-	// ОПЕРАЦИЯ СО ЗНАЧЕНИЯМИ ОБЪЕКТОВ
 
+	// ОПЕРАЦИЯ СО ЗНАЧЕНИЯМИ ОБЪЕКТОВ
 
 const Obyekt = {
 	bir: 1,
@@ -239,6 +240,15 @@ console.log(kesisme);
 
 
 
+      // massiv.slice();  
+
+const oldMassiv = [1, 2, 3, 4, 5];
+const newMassiv = oldMassiv.slice();  // копирует массива в новый массив
+
+console.log(newMassiv);
+
+
+
 	// ... ОПЕРАТОР
 
 const masin = ["bmw", "kia", "nissan"],
@@ -246,3 +256,34 @@ const masin = ["bmw", "kia", "nissan"],
 	  avtomobil = [...masin, ...marka]; // ... объединяет массивов
  
 console.log(avtomobil);
+
+
+
+   // СТАНДАРТЫ ОБЪЕДИНЕНИЯ ES6-ES9
+        
+const mesgulluq = ["birSayli", "ikiSayli", "ucSayli", "dordSayli", "besSayli"],
+      DMA = ["birlesmedenSonra", "basMesgulluqIdaresi"],
+      struktur = [...mesgulluq, ...DMA]; // ... ОБЪЕДИНЯЕТ МАССИВОВ
+
+console.log(struktur);
+
+
+
+
+        // ООП ПРОГРАММИРОВАНИЕ
+
+const soldier = {
+        healthy: 100,
+        armor: 89,
+        height: 1.85,
+        weight: 78
+};
+
+
+const soldierOne = Object.create(soldier); // создает прототип soldier-а для soldierOne
+
+console.log(soldierOne.height); 
+
+
+
+
