@@ -287,3 +287,6 @@ console.log(soldierOne.height);
 
 
 
+const number = 5;
+
+console.log(typeof(number)); // определяет типа данных
