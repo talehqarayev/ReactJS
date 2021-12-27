@@ -283,9 +283,13 @@ const soldier = {
 const soldierOne = Object.create(soldier); // создает прототип soldier-а для soldierOne
 
 console.log(soldierOne.height); 
+  
 
 
+	// ДИНАМИЧЕСКАЯ ТИПИЗАЦИЯ JS
 
+
+console.log(typeof(null + '')); // с помощью кавычек превращаем всех типов в STRING
 
 const number = 5;
 
