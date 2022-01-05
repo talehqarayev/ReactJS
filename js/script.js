@@ -294,3 +294,6 @@ console.log(typeof(null + '')); // с помощью кавычек превра
 const number = 5;
 
 console.log(typeof(number)); // определяет типа данных
+
+let x = 6;
+alert(x++);
