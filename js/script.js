@@ -294,3 +294,28 @@ console.log(typeof(null + '')); // с помощью кавычек превра
 const number = 5;
 
 console.log(typeof(number)); // определяет типа данных
+
+
+// !! - два знака отрицания превращает других типов данных в Boolean
+
+
+        // МЕТОДЫ ПОЛУЧЕНИЕ ДАННЫХ СО СТРАНИЦЫ
+
+
+const box = document.getElementById("box");
+console.log(box);
+
+const btns = document.getElementsByTagName("button");
+console.log(btns);
+
+const klass = document.getElementsByClassName("klass");
+console.log(klass);
+
+
+// СОВРЕМЕННЫЕ МЕТОДЫ - в этих методах нужно использовать нужные символы перед ИД или перед КЛАССами
+
+const headers = document.querySelectorAll(".header");
+console.log(headers);
+
+const oneHead = document.querySelector(".header");
+console.log(oneHead);
