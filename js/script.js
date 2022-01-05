@@ -193,107 +193,122 @@
 
         // ОПЕРАЦИЯ С МАССИВАМИ
 
-const massiv = [1,42,3,24,5];
-massiv.sort(compareNumb);
+// const massiv = [1,42,3,24,5];
+// massiv.sort(compareNumb);
 
-function compareNumb (a, b) { // Функция для правильного сравнения числа правильно
-    return (a - b);
-}
+// function compareNumb (a, b) { // Функция для правильного сравнения числа правильно
+//     return (a - b);
+// }
 
-massiv.forEach(function(item, i, massiv) {
-    console.log(`${i}: ${item} in the massiv ${massiv}`);
-});
-
-
-massiv.pop(); // удаляет элемент с конца массива
-massiv.push(10); // добаляет элемент в конце массива
-
-console.log(massiv);
+// massiv.forEach(function(item, i, massiv) {
+//     console.log(`${i}: ${item} in the massiv ${massiv}`);
+// });
 
 
+// massiv.pop(); // удаляет элемент с конца массива
+// massiv.push(10); // добаляет элемент в конце массива
 
-    // СФОРМИРОВАНИЕ МАССИВ НА ОСНОВЕ СТРОК
-
-const str = prompt(",");
-const products = str.split(",");
-console.log(products);
+// console.log(massiv);
 
 
 
+//     // СФОРМИРОВАНИЕ МАССИВ НА ОСНОВЕ СТРОК
 
-	// ОПЕРАЦИЯ СО ЗНАЧЕНИЯМИ ОБЪЕКТОВ
-
-const Obyekt = {
-	bir: 1,
-	iki: 2,
-	uc: 3
-};
-
-const yeniObyekt = {
-	dord: 4,
-	bes: 5,
-	alti: 6
-};
-
-const kesisme = Object.assign(Obyekt, yeniObyekt); // объединяет объекты
-console.log(kesisme);
+// const str = prompt(",");
+// const products = str.split(",");
+// console.log(products);
 
 
 
-      // massiv.slice();  
 
-const oldMassiv = [1, 2, 3, 4, 5];
-const newMassiv = oldMassiv.slice();  // копирует массива в новый массив
+// 	// ОПЕРАЦИЯ СО ЗНАЧЕНИЯМИ ОБЪЕКТОВ
 
-console.log(newMassiv);
+// const Obyekt = {
+// 	bir: 1,
+// 	iki: 2,
+// 	uc: 3
+// };
+
+// const yeniObyekt = {
+// 	dord: 4,
+// 	bes: 5,
+// 	alti: 6
+// };
+
+// const kesisme = Object.assign(Obyekt, yeniObyekt); // объединяет объекты
+// console.log(kesisme);
 
 
 
-	// ... ОПЕРАТОР
+//       // massiv.slice();  
 
-const masin = ["bmw", "kia", "nissan"],
-	  marka = ["M5", "RIO", "Sunny"],
-	  avtomobil = [...masin, ...marka]; // ... объединяет массивов
+// const oldMassiv = [1, 2, 3, 4, 5];
+// const newMassiv = oldMassiv.slice();  // копирует массива в новый массив
+
+// console.log(newMassiv);
+
+
+
+// 	// ... ОПЕРАТОР
+
+// const masin = ["bmw", "kia", "nissan"],
+// 	  marka = ["M5", "RIO", "Sunny"],
+// 	  avtomobil = [...masin, ...marka]; // ... объединяет массивов
  
-console.log(avtomobil);
+// console.log(avtomobil);
 
 
 
-   // СТАНДАРТЫ ОБЪЕДИНЕНИЯ ES6-ES9
+//    // СТАНДАРТЫ ОБЪЕДИНЕНИЯ ES6-ES9
         
-const mesgulluq = ["birSayli", "ikiSayli", "ucSayli", "dordSayli", "besSayli"],
-      DMA = ["birlesmedenSonra", "basMesgulluqIdaresi"],
-      struktur = [...mesgulluq, ...DMA]; // ... ОБЪЕДИНЯЕТ МАССИВОВ
+// const mesgulluq = ["birSayli", "ikiSayli", "ucSayli", "dordSayli", "besSayli"],
+//       DMA = ["birlesmedenSonra", "basMesgulluqIdaresi"],
+//       struktur = [...mesgulluq, ...DMA]; // ... ОБЪЕДИНЯЕТ МАССИВОВ
 
-console.log(struktur);
-
-
+// console.log(struktur);
 
 
-        // ООП ПРОГРАММИРОВАНИЕ
-
-const soldier = {
-        healthy: 100,
-        armor: 89,
-        height: 1.85,
-        weight: 78
-};
 
 
-const soldierOne = Object.create(soldier); // создает прототип soldier-а для soldierOne
+//         // ООП ПРОГРАММИРОВАНИЕ
 
-console.log(soldierOne.height); 
+// const soldier = {
+//         healthy: 100,
+//         armor: 89,
+//         height: 1.85,
+//         weight: 78
+// };
+
+
+// const soldierOne = Object.create(soldier); // создает прототип soldier-а для soldierOne
+
+// console.log(soldierOne.height); 
   
 
 
-	// ДИНАМИЧЕСКАЯ ТИПИЗАЦИЯ JS
+// 	// ДИНАМИЧЕСКАЯ ТИПИЗАЦИЯ JS
 
 
-console.log(typeof(null + '')); // с помощью кавычек превращаем всех типов в STRING
+// console.log(typeof(null + '')); // с помощью кавычек превращаем всех типов в STRING
 
-const number = 5;
+// const number = 5;
 
-console.log(typeof(number)); // определяет типа данных
+// console.log(typeof(number)); // определяет типа данных
 
-let x = 6;
-alert(x++);
+
+
+        // ПОЛУЧЕНИЕ ЭЛЕМЕНТОВ СО СТРАНИЦЫ
+
+let box = document.getElementById("box"); 
+console.log(box);
+
+let header = document.getElementsByClassName("header"); // получает по классу .header и создает псевдомассив со страницы
+console.log(header);
+
+// Современные методы
+
+box = document.querySelectorAll(".box"); // получает всех .box и создает псевдомассив
+console.log(box);
+
+header = document.querySelector(".header"); // получает первый .header элемент со страницы
+console.log(header);
