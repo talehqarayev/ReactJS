@@ -50,3 +50,5 @@ document.body.append(div); // Берем тег body и во внутрь В К�
 // div.innerHTML = "Hello World!"; // с помощью этой функции добавляет HTML элементы в JavaScript
 
 // div.textContent = "Hello World!"; // разница в том что эта функция работает только с ТЕКСТОМ
+
+div.insertAdjacentHTML("beforebegin", "<h2>Hello!</h2>");
