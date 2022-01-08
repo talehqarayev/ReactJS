@@ -24,27 +24,29 @@ const movieDB = {
     ]
 };
 
-const news = document.querySelectorAll(".promo__adv img"),
+
+const adv = document.querySelectorAll(".promo__adv img"),
       poster = document.querySelector(".promo__bg"),
       genre = poster.querySelector(".promo__genre"),
-      oldFilms = document.querySelectorAll(".promo__interactive-list");
+      oldFilms = document.querySelector(".promo__interactive-list");
 
 
     // простой способ удалить данные из псевдомассива
     // ОБЯЗАТЕЛЬНО СТАВИТЬ индекс после имени псевдомассива, иначе функции не применяются самому псевдомассиву
 
-// news[0].remove();
-// news[1].remove();
-// news[2].remove();
+// adv[0].remove();
+// adv[1].remove();
+// adv[2].remove();
 
-    // ЗАДАНИЕ - 1 автоматизированный способ удалить данные из псевдомассива
 
-// news.forEach(function (item) {
+// ЗАДАНИЕ - 1 автоматизированный способ удалить данные из псевдомассива
+
+// adv.forEach(function (item) {
 
 //     item.remove();
 // });
 
-news.forEach(item => {
+adv.forEach(item => {
 
     item.remove();
 });
@@ -58,9 +60,16 @@ poster.style.backgroundImage = 'url("img/bg.jpg")'; // изменить карт
 
 
 // ЗАДАНИЕ - 4
-oldFilms.forEach(item => {
 
-    item.innerHTML = "";
+oldFilms.innerHTML = ""; // очистить предыдущие значения в массиве
+movieDB.movies.sort();
+
+movieDB.movies.forEach((film, i) => {
+    oldFilms.innerHTML += `
+    <li class="promo__interactive-item">${i + 1} ${film}
+        <div class="delete"></div>
+    </li>
+    `;
 });
 
-movieDB.movies.sort();
+// querySelector и querySelectorAll разница в том что, первый не создает HTML псевдомассив потому что вибрает один элемент, а второй создает потом что выбирает несколько
