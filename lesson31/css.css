@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 button {
   width: 150px;
   height: 50px;
@@ -23,30 +22,4 @@ button:hover {
 a {
   display: block;
   margin-top: 30px;
-=======
-button {
-  width: 150px;
-  height: 50px;
-  background-color: green;
-  border: none;
-  color: #fff;
-  border-radius: 10px;
-  outline: none;
-  cursor: pointer;
-  transition: 0.3s;
-}
-button:hover {
-  transform: scale(0.95);
-}
-.overlay {
-  background-color: pink;
-  width: 200px;
-  height: 100px;
-  text-align: center;
-  line-height: 100px;
-}
-a {
-  display: block;
-  margin-top: 30px;
->>>>>>> 9cb45bdd28cd6ffb560d09a530e080dbd4dd5ee0
 }
