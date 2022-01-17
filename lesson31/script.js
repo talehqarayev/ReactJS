@@ -1,10 +1,7 @@
 "use strict";
 
- // Устаревщий код, но иногда встречается в проектах. Получаем кнопку, и при наведении на него срабатывает наша функция
-
 // const btns = document.querySelector("#btn"),
 //       link = document.querySelector("a");
-
 
 // btns.addEventListener("mouseenter", (event) => {
 //     console.log(event.target); // можно отделные методы выносить в консоль из объекта данного элемента
@@ -12,6 +9,9 @@
 //     console.log("Your mouse on the button now");
 // });
 
+
+
+// Устаревщий код, но иногда встречается в проектах. Получаем кнопку, и при наведении на него срабатывает наша функция
 
 // btns.onmouseover = function () {
 
