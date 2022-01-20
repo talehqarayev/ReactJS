@@ -7,7 +7,7 @@ const btns = document.querySelectorAll("button"),
 // console.log(btns[0].classList.remove("some")); // удаляет класс из тега
 // console.log(btns[0].classList.toggle("blue")); // Если класс существует то убирает, если его нет то добавляет
 
-// if(btns[1].classList.contains("red")) { // Проверяет есть ли в этом индексе есть такой класс
+// if(btns[1].classList.contains("red")) { // Проверяет есть ли в этом индексе такой класс
 //     console.log("red");
 // }
 

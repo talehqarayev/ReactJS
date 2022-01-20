@@ -4,13 +4,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
     // box.addEventListener("touchstart", (e) => {
-        // e.preventDefault();
+    //     e.preventDefault();
     //     console.log("You touched on the screen of mobile");
     // });
 
 
     // box.addEventListener("touchmove", (e) => {
-        // e.preventDefault();
+    //     e.preventDefault();
     //     console.log("You touched and moving on the screen of mobile");
     // });
 
