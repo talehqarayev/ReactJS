@@ -1,0 +1,38 @@
+* {
+    position: relative;
+}
+
+
+.tabs {
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+.tabs_item img {
+    width: 500px;
+    height: 400px;
+}
+
+.tabs_descrb {
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.tabs_pult {
+    position: absolute;
+    left: 1000px;
+    top: 100%;
+}
+
+.tabs_pult-btn {
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn_active {
+    font-size: 24px;
+    color: red;
+    font-weight: 700;
+}
