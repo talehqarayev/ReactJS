@@ -38,7 +38,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // liveTimer
 
-const deadline = '2022-01-31';
+const deadline = '2022-02-20';
 
 function getTimeRemaining(endtime) {
     const t = Date.parse(endtime) - Date.parse(new Date()),
