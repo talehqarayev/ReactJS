@@ -34,6 +34,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+
     // MODAL WINDOW
 
     const modalTrigger = document.querySelectorAll("[data-modal]"),
@@ -49,8 +50,6 @@ window.addEventListener("DOMContentLoaded", () => {
         });
 
     });
-
-
 
     // DON'T REPEAT YOURSELF - по этому принципу мы можем вынести повторяющиюся часть кода в функцию и один раз пишем, а потом вызываем в нам нужном месте
 
@@ -74,7 +73,6 @@ window.addEventListener("DOMContentLoaded", () => {
         // modal.classList.toggle("show"); // // АЛЬТЕРНАТИВА 
         document.body.style.overflow = ""; // при закрытом модальном окне ВЕРНУТЬ функцию скролла на странице
     });
-
 
     // с помощью данного метода можем, кликнуть в любом месте и закрывается модальное окно
     modal.addEventListener("click", (e) => {
