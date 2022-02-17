@@ -179,11 +179,11 @@ setClock('.timer', deadline);
             this.descr = descr;
             this.price = price;
             this.parent = document.querySelector(parentSelector);
-            this.transfer = 27;
-            this.changeToUAH();
+            this.transfer = 1.70;
+            this.changeToAZN();
         }
 
-        changeToUAH() {
+        changeToAZN() {
            this.price = this.price * this.transfer;
         }
 
@@ -197,7 +197,7 @@ setClock('.timer', deadline);
                     <div class="menu__item-divider"></div>
                     <div class="menu__item-price">
                         <div class="menu__item-cost">Цена:</div>
-                        <div class="menu__item-total"><span>${this.price}</span> грн/день</div>
+                        <div class="menu__item-total"><span>${this.price}</span> AZN/день</div>
                     </div>
                 </div>
             `;
