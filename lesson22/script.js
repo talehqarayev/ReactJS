@@ -21,7 +21,7 @@ const newArr = oldArr.slice(); // позволяет скопировать ма
         // SPREAD OPERATORS FOR COPYİNG
         
 const music = ["rock", "pop", "relax"],
-      singers = ["Justin", "Rihanna", "Duman"],
+      singers = ["Adele", "Rihanna", "Duman"],
       internet = [...music, ...singers];
 
 console.log(internet);
