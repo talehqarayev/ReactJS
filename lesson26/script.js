@@ -20,6 +20,11 @@ console.log(typeof(Number("4")));
 console.log(typeof(+"4"));
 
 
+// TO boolean
+
+// 0, "", null, undefined, Nan - ЭТИ ЗНАЧЕНИЯ ВСЕГДА - false
+
+
 
 
 // ВСЕ ЧТО ПОЛУЧАЕМ ОТ ПОЛЗОВАТЕЛЯ, ЭТО ТИП ДАННЫХ СТРОКА
