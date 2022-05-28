@@ -38,14 +38,28 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // liveTimer
 
-const deadline = '2022-02-20';
+const deadline = '2022-06-20';
 
-function getTimeRemaining(endtime) {
-    const t = Date.parse(endtime) - Date.parse(new Date()),
+function getTimeRemaining(endtime) {    
+
+    let days, hours, minutes, seconds;
+    const t = Date.parse(endtime) - Date.parse(new Date());
+
+    // Если время таймера истекло тогда с помощью этой функции поставляем нулей вместо значения таймера
+    if (t <= 0) {
+        days = 0,
+        hours = 0,
+        minutes = 0,
+        seconds = 0;
+
+    } else {
+        
         days = Math.floor( (t/(1000*60*60*24)) ),
         seconds = Math.floor( (t/1000) % 60 ),
         minutes = Math.floor( (t/1000/60) % 60 ),
         hours = Math.floor( (t/(1000*60*60) % 24) );
+
+    }
 
     return {
         'total': t,
@@ -56,6 +70,8 @@ function getTimeRemaining(endtime) {
     };
 }
 
+
+// Если часов или дней меньше 10, тогда поставляем 0 перед этими значениями
 function getZero(num){
     if (num >= 0 && num < 10) { 
         return '0' + num;
@@ -73,7 +89,7 @@ function setClock(selector, endtime) {
         seconds = timer.querySelector('#seconds'),
         timeInterval = setInterval(updateClock, 1000);
 
-    updateClock();
+    updateClock(); // Решает мигание таймера  
 
     function updateClock() {
         const t = getTimeRemaining(endtime);

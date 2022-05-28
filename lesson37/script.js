@@ -10,7 +10,7 @@ const btns = document.querySelectorAll("button"),
 // if(btns[1].classList.contains("red")) { // Проверяет есть ли в этом индексе такой класс
 //     console.log("red");
 // }
-
+ 
 btns[0].addEventListener("click", () => {
 
     // if (!btns[1].classList.contains("red")) {

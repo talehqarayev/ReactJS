@@ -17,8 +17,9 @@
 // console.log(document.body.firstElementChild);
 // console.log(document.body.lastElementChild);
 
-// console.log(document.querySelector("#current").parentNode); // получаем родителя данного элемента. Если писать еще раз команду за командой, то получаем еще высшего родителя
+// console.log(document.querySelector("#current").parentNode); // получаем родитель данного элемента. Если писать еще раз команду за командой, то получаем еще высшего родителя
 // console.log(document.querySelector("#current").parentElement);
+
 
 // DATA АТРИБУТЫ
 
