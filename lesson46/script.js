@@ -62,7 +62,7 @@ console.log(double(8));
 
 // Когда callBack функция в классическом виде вызывается, то this = сам обработчик событий (this === e.target)
 // А когда стрелочная функция используется, то this === undefined
-const btn = document.querySelector("button");
+const btn = document.querySelector("body");
 
 btn.addEventListener("click", function() {
     console.log(this);

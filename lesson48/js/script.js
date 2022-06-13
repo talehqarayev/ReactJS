@@ -115,7 +115,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
      // liveTimer
 
-const deadline = '2022-03-18';
+const deadline = '2022-06-18';
 
 function getTimeRemaining(endtime) {
     const t = Date.parse(endtime) - Date.parse(new Date()),
@@ -230,8 +230,9 @@ setClock('.timer', deadline);
         "post",
         'Меню "Постное"',
         'Меню “Постное” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков',
-        8,
+        14,
         ".menu .container"
     );
     div.render();
+
 });

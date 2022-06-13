@@ -15,8 +15,8 @@ btn.addEventListener("click", () => {
 // const height = box.clientHeight; // получение размера высоты с паддингом без бордера, и маргина
 // console.log(width, height);
 
-// const width = box.offsetWidth; // получение размера ширины с паддингом, бордера, и маргина
-// const height = box.offsetHeight; // получение размера высоты с паддингом, бордера, и маргина
+// const width = box.offsetWidth; // получение размера ширины с паддингом, бордером, и маргином
+// const height = box.offsetHeight; // получение размера высоты с паддингом, бордером, и маргином
 // console.log(width, height);
 
 
